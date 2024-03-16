@@ -43,17 +43,17 @@ begin
       readln;
 end.
 ```
-<ul> 
+<ul class="list-unstyled">
 Output :
-<li>43<\li>
-<li>44<\li>
-<li>45<\li>
+<li> 43<\li>
+<li> 44<\li>
+<li> 45<\li>
 <\ul>
-<p>  
+
 FreeAndNil works “better” than free, but only at runtime.
 
 ---
-
+<p>  
 (Should be ) famous author Jarrod Hollingworth contributed here : https://forums.adug.org.au/t/memory-safety-and-delphi-in-the-news/60252/31
 
 To help catch access in freed memory immediately, at least where the memory is not reallocated, and to catch reads, you could use something to trigger AV’s like the following instead of calling .Free:
