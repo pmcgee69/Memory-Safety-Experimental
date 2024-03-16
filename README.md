@@ -46,7 +46,9 @@ end.
 > Output :
 >
 > 43
+>
 > 44
+> 
 > 45
 
 FreeAndNil works “better” than free, but only at runtime.
