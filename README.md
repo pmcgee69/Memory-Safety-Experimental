@@ -4,9 +4,7 @@ Experimenting with ways to increase memory safety in Delphi.
 As of March 2024, memory safety of programming languages is in the news.
 C and C++ have been excoriated for decades ... and Delphi was listed among a suggested 10 'memory safe' languages.
 
-This came as a surprise to some  
-
-<a href="https://forums.adug.org.au/t/memory-safety-and-delphi-in-the-news/60252">Aust Delphi Usergroup Forums</a>
+This came as a surprise to some : <a href="https://forums.adug.org.au/t/memory-safety-and-delphi-in-the-news/60252">ADUG Forums - Delphi Memory Safety</a>
 
 ---
 
@@ -47,11 +45,11 @@ end.
 ```
 <ul> 
 Output :
-<li> 43 <\li>
-<li> 44 <\li>
-<li> 45 <\li>
+<li>43<\li>
+<li>44<\li>
+<li>45<\li>
 <\ul>
-  
+<p>  
 FreeAndNil works “better” than free, but only at runtime.
 
 ---
@@ -59,7 +57,8 @@ FreeAndNil works “better” than free, but only at runtime.
 (Should be ) famous author Jarrod Hollingworth contributed here : https://forums.adug.org.au/t/memory-safety-and-delphi-in-the-news/60252/31
 
 To help catch access in freed memory immediately, at least where the memory is not reallocated, and to catch reads, you could use something to trigger AV’s like the following instead of calling .Free:
-```delphi
+</p>
+```pascal
 procedure FreeAndInvalidate(var Obj);
 var
   Temp: TObject;
@@ -91,6 +90,4 @@ I wanted to explore ideas about ways to prevent runtime issues :
 - double frees
 - other similar issues
 
-       <li>
-          <a href="Non-owning-references.html">Non-owning References</a>
-       </li>
+<a href="Non-owning-references.html">Non-owning References</a>
