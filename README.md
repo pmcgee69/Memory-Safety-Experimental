@@ -4,8 +4,7 @@ Experimenting with ways to increase memory safety in Delphi.
 As of March 2024, memory safety of programming languages is in the news.
 C and C++ have been excoriated for decades ... and Delphi was listed among a suggested 10 'memory safe' languages.
 
-This came as a surprise to some 
-<li>https://forums.adug.org.au/t/memory-safety-and-delphi-in-the-news/60252</li>
+This came as a surprise to some  <a href="forums.adug.org.au/t/memory-safety-and-delphi-in-the-news/60252" Aust Delphi Usergroup Forums</a>
 
 ---
 
@@ -49,6 +48,7 @@ end.
 <li> 44
 <li> 45
 <\ul>
+  
 FreeAndNil works “better” than free, but only at runtime.
 
 ---
