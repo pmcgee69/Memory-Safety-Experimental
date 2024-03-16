@@ -4,7 +4,8 @@ Experimenting with ways to increase memory safety in Delphi.
 As of March 2024, memory safety of programming languages is in the news.
 C and C++ have been excoriated for decades ... and Delphi was listed among a suggested 10 'memory safe' languages.
 
-This came as a surprise to some ->  https://forums.adug.org.au/t/memory-safety-and-delphi-in-the-news/60252
+This came as a surprise to some 
+<li>https://forums.adug.org.au/t/memory-safety-and-delphi-in-the-news/60252</li>
 
 ---
 
@@ -43,14 +44,11 @@ begin
       readln;
 end.
 ```
-> Output :
->
-> 43
->
-> 44
-> 
-> 45
-
+<ul> Output :
+<li> 43
+<li> 44
+<li> 45
+<\ul>
 FreeAndNil works “better” than free, but only at runtime.
 
 ---
@@ -91,5 +89,5 @@ I wanted to explore ideas about ways to prevent runtime issues :
 - other similar issues
 
        <li>
-          <a href="xxx.github.io/research.html">Research</a>
-        </li>
+          <a href="pmcgee69.github.io/Memory-Safety-Experimental/Non-owning-references.html">Non-owning References</a>
+       </li>
