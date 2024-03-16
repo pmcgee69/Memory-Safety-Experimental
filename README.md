@@ -53,7 +53,7 @@ FreeAndNil works “better” than free, but only at runtime.
 
 ---
   
-(Should be ) famous author Jarrod Hollingworth contributed here : https://forums.adug.org.au/t/memory-safety-and-delphi-in-the-news/60252/31
+(Should be ) famous author Jarrod Hollingworth contributed here : <a href="https://forums.adug.org.au/t/memory-safety-and-delphi-in-the-news/60252/31">Jarrod H</a>
 
 To help catch access in freed memory immediately, at least where the memory is not reallocated, and to catch reads, you could use something to trigger AV’s like the following instead of calling .Free:
 
@@ -80,7 +80,7 @@ Calling FreeAndNil() also works but that would get mixed in with ‘access befor
 
 And highly experienced ADUG member Grahame Grieve had already given a talk on preventing Double Frees :
 
-https://www.youtube.com/watch?v=zwXlkmnCGX0
+<a href="https://www.youtube.com/watch?v=zwXlkmnCGX0">Preventing Double Free - Grahame Grieve</a>
 
 ---
 
