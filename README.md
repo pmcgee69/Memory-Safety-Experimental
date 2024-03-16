@@ -9,6 +9,7 @@ This came as a surprise to some : <a href="https://forums.adug.org.au/t/memory-s
 ---
 
 As an example of the ability to access memory past its proper lifetime, I suggested :
+
 (This inspired by @GrahameDGrieve’s presentation semi-recently)
 ```pascal
 {$APPTYPE CONSOLE}
@@ -43,21 +44,19 @@ begin
       readln;
 end.
 ```
-<ul class="list-unstyled">
-Output :
-<li> 43<\li>
-<li> 44<\li>
-<li> 45<\li>
-<\ul>
+>Output :
+>43
+>44
+>45
 
 FreeAndNil works “better” than free, but only at runtime.
 
 ---
-<p>  
+  
 (Should be ) famous author Jarrod Hollingworth contributed here : https://forums.adug.org.au/t/memory-safety-and-delphi-in-the-news/60252/31
 
 To help catch access in freed memory immediately, at least where the memory is not reallocated, and to catch reads, you could use something to trigger AV’s like the following instead of calling .Free:
-</p>
+
 ```pascal
 procedure FreeAndInvalidate(var Obj);
 var
